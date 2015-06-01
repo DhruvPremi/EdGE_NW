@@ -1,0 +1,31 @@
+Listing Info
+
+Project Development by using JAVA Technology
+
+Responsibilities
+
+As part of a team, performs analysis, design, implementation, unit
+tests, and code reviews. Works with business stakeholders, managers,
+and other developers to create solutions to business problems. Good
+communication skills are key to this position.
+Translates functional requirements into conceptual and detailed
+designs; Provides estimates for development effort, Implementing
+proof of concept, prototypes and production-grade software; writes
+unit tests
+
+Essential Skill Set
+
+Experience in designing and implementing web applications
+Core Java, J2EE (Servlets, JSP, JDBC) – 3-4 years
+Experienced in Java web development, skills include: JSP, servlet, JSTL,
+JMS, JMX, JAXB, JAX-WS, CXF and JAX-RS
+Frameworks (Struts, spring and Hibernate) – 3+ years
+Experience in working with Tomcat and Apache
+Knowledge and understanding of relational database structure and
+design using MySQL
+Java 6 , Spring MVC framework, JSP, JSTL & Servlets, , XML
+SDLC
+XML, CSS, AJAX, HTML 5 & CSS 3, Web services SOAP & RESTFul and
+JSON
+Some experience with performance tuning (front-end/back-end)
+Ability to work in a team environment with a positive attitude

@@ -1,0 +1,20 @@
+Must Have:
+
+1. Minimum 8+years of experience working with Core Java ,spring,Hibernateand web applications.
+2. Strong work experience in Java, JEE.
+3. Knowledge of UML diagrams and should have used UML in technical documentation
+4. Knowledge of different Design Patterns and should have used those in projects
+5. Experience working with Spring framework and Hibernate ORM.
+6. Experience in UI languages and technologies like HTML, CSS, JQuery, Javascript, AJAX etc.
+7. Experience working with multiple application servers and developing solutions that work in clustered environments.
+8. Experience with databases like Oracle and SQL Server. Database experience with creating schemas, DDL, DML scripts and PL/SQL. Experience with complex queries using joins, unions etc.
+9. Working knowledge of Maven
+10. Experience using IDEs like Eclipse and tools like PMD, Checkstyle. Database tools like TOAD.
+11. Strong technical, problem-solving and hands-on skills in distributed system architecture.
+
+Good to Have:
+
+1. Knowledge of jBPM
+2. Prior experience using CI tools like Jenkins, Hudson.
+3. Experience in JMS and Messaging Servers.
+4. Knowledge of Agile processes like SCRUM

@@ -1,0 +1,76 @@
+IBM has been present in India since 1992. IBM India's solutions and services span all major industries including financial services, healthcare, government, automotive, telecommunications and education, among others. As a trusted partner with wide-ranging service capabilities, IBM helps clients transform and succeed in challenging circumstances. The diversity and breadth of the entire IBM portfolio of research, consulting, solutions, services, systems and software, uniquely distinguishes IBM India from other companies in the industry.
+
+IBM Global Business Services helps clients solve complex business and technical issues. We deliver innovative business consulting, process design, systems integration, application management and design. Our core competencies include deep business process and industry expertise, advanced analytics and research capabilities, comprehensive IT infrastructure knowledge, and proven ability to implement enterprise solutions that deliver bottom-line business value.
+
+Application Developer : Java Spring
+
+The candidate is required to design, develop and support application solutions to meet customer requirements.
+
+Responsibilities:
+
+Develop technical specifications
+Develop (or refine) unit test cases
+Perform application unit testing activities
+Translate business - I/T requirements
+Interpret data models
+Use application development methodology and tools
+Use application strategies for maintenance
+Use full life cycle system development processes
+Use programming languages
+Use software configuration management (SCM) tools
+Perform root cause analysis in defect resolution and while debugging
+Review high level design to ensure the application is buildable
+Leads and guides developers in day to day activities
+Specifies developer environment and coordinates setup
+Provides overall technical planning and coordination
+Monitors compliance with technical and software engineering process and standards
+Leads design decomposition into program specifications
+Identifies reuse opportunities and designs for reuse as appropriate
+Leads quality assurance reviews, code inspections, and walkthroughs of the developers' code
+Validates test results
+Participates in development of the system test plan
+Provides technical leadership in system integration testing and participates in user acceptance testing
+Leads knowledge transfer with the software maintenance organization
+Coordinates the development of system documentation
+Participates in risk assessments and metrics workshops
+Coordinates deployment and promotion of code
+Assigns development tasks and defect resolution tasks to Developer staff
+Acts as technical interface to development team for external groups
+Conducts technical interviews for team members and conducts orientation of new staff
+Provides technical estimates as required
+Validates change requests and defect reports
+Continuously improves application design and performance where possible
+Provides timely, accurate performance feedback to development team members
+Provides vision for, and leads implementation of prototype initiatives
+
+Required skills:
+
+Application development (5+ years)
+Leading projects/teams (desirable)
+Consulting (desirable)Skills & Knowledge (All L4)
+Application development with all applicable technologies
+Ability to translate business requirements into application development alternatives
+Programming languages
+Communication
+Problem solving
+Leadership
+Team Building
+Experience in Java, Spring, Hibernate is mandatory.
+
+Adaptable
+Resourceful
+Well-organized #Strategic thinker #Interpersonal sensitivity
+
+Total experience 5+ years
+
+Required
+
+    Bachelor's Degree in Information Technology
+    At least 3 years experience in Java, Spring is mandatory
+    At least 1 year experience in JSP, Spring,Hibernate
+    At least 3 years experience in J2EE technology fundamentals and App Server Platforms - WebSphere, WebLogic, Jboss
+    At least 1 year experience in Architecture - Basics, Patterns - interpretation, conceptualization
+    English: Fluent
+
+
+IBM is committed to creating a diverse environment and is proud to be an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, national origin, genetics, disability, age, or veteran status.

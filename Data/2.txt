@@ -1,0 +1,29 @@
+Candidate will be responsible for development of superior n-tiered backend applications
+
+- Having good communication skills and must have interacted with clients directly
+
+- Possess significant knowledge of client server and internet systems architectures.
+
+- Good understanding of HTTP and HTTPS
+
+- Thorough understanding XML schemas and experience in using various parsers
+
+- Understand benefits of the various design methodologies and object oriented environments.
+
+- Responsible to capture, organize, categorize and document technical requirements, develop functional and technical specifications, build and manage code using standard defined specifications and conduct unit testing.
+
+- Candidate must be a good team worker, should have proven organization, communication and follow-up skills, be self-motivated with an ability to stay on deadline in complex, multi-staged projects and to work on more than one project at a time.
+
+Functional Area: IT - Software
+
+Functional Role: Technical Leader
+
+Keywords: Core Java, Groovy, Springs, JSP, Ajax, MySQL.
+
+Candidate Requirement
+
+- Demonstrated Experience
+
+- Very good verbal and written communication
+
+- Ability to device solution to complex problems.
