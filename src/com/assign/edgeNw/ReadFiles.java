@@ -22,7 +22,7 @@ public class ReadFiles
 		ArrayList<String> temp;
 		for(String path:paths)
 		{
-			System.out.println("\n **************** New File *******************  ");
+			// System.out.println("\n **************** New File *******************  ");
 			
 			temp = new ArrayList<String>();
 			try 
@@ -32,7 +32,7 @@ public class ReadFiles
 	 
 				while ((sCurrentLine = br.readLine()) != null) 
 				{
-					System.out.println(sCurrentLine);
+					// System.out.println(sCurrentLine);
 					temp.add(sCurrentLine);
 				}
 			} 
