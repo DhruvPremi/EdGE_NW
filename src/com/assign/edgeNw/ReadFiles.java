@@ -23,7 +23,7 @@ public class ReadFiles
 		for(String path:paths)
 		{
 			// System.out.println("\n **************** New File *******************  ");
-			
+			// System.out.println(path);
 			temp = new ArrayList<String>();
 			try 
 			{

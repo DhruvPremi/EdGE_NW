@@ -18,21 +18,26 @@ public class Start {
 		// Make the Hack Object
 		Hacks hack = new Hacks(allFiles);
 		
-		// Term Frequency and printing the Sorted out List
-		HashMap<String ,Integer> theMap = hack.termFrequency();
-		hack.printSortedList(theMap);
+		// Overall Document Term Frequency and printing the Sorted out List
+		HashMap<String ,Double> theMap = hack.termFrequency();
+		hack.printSortedList(theMap , "Overall Document Term Frequency");
 		
-		
-		
-		/*
-		for(String s : theMap.keySet())
+		// Each Document Term Frequency and printing the Sorted List
+		ArrayList<HashMap<String ,Double>> eachDocumentMap = hack.eachDocumentTermFrequncy();
+		int i = 1;
+		for(HashMap<String ,Double> map : eachDocumentMap)
 		{
-			if(theMap.get(s) > 2)
-			{
-				System.out.print(s + "  ==  " + theMap.get(s) + "  ,, " );
-			}
+			hack.printSortedList(map, i + " Document Term Frequency ");
+			i++;
 		}
-		*/
+		
+		
+		// Document Frequency for each term
+		hack.printSortedList(hack.documentFrequency(), "Document Frequency for each term");
+		
+		
+		// Unigram Model
+		
 		
 	}
 }

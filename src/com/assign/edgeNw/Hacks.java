@@ -16,25 +16,55 @@ public class Hacks
 		this.allFilesString = allFilesString;
 	}
 	
-	HashMap<String ,Integer> termFrequency()
+	HashMap<String ,Double> termFrequency()
 	{
 		WordMap wm = new WordMap(allFilesString);
 		return wm.retTheTotalMap();
 	}
 	
-	void printSortedList(HashMap<String , Integer> map)
+	HashMap<String , Double> documentFrequency()
+	{
+		WordMap wm = new WordMap(allFilesString);
+		ArrayList<HashMap<String , Double>> temp = wm.retTheMap();
+		
+		HashMap<String ,Double> map = new HashMap<String , Double>();
+		
+		for(HashMap<String , Double> a : temp)
+		{
+			for(String s: a.keySet())
+			{
+				if(map.containsKey(s))
+				{
+					map.put(s, map.get(s) + 1);
+				}
+				else
+				{
+					map.put(s, 1.0);
+				}
+			}
+		}
+		return map;
+	}
+	
+	ArrayList<HashMap<String , Double>> eachDocumentTermFrequncy()
+	{
+		WordMap wm = new WordMap(allFilesString);
+		return wm.retTheMap();
+	}
+	
+	void printSortedList(HashMap<String , Double> map ,  String message)
 	{
 		bvc = new ValueComparator(map);
-		TreeMap<String,Integer> sorted_map = new TreeMap<String,Integer>(bvc);
+		TreeMap<String,Double> sorted_map = new TreeMap<String,Double>(bvc);
 		sorted_map.putAll(map);
-		System.out.println("results: "+sorted_map);
+		System.out.println(message+ "  " + sorted_map);
 	}
 }
 
 class ValueComparator implements Comparator<String> {
 
-    Map<String, Integer> base;
-    public ValueComparator(Map<String, Integer> base) {
+    Map<String, Double> base;
+    public ValueComparator(Map<String, Double> base) {
         this.base = base;
     }
 

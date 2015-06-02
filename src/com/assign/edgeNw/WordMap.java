@@ -8,15 +8,15 @@ import java.util.regex.Pattern;
 
 public class WordMap 
 {
-	ArrayList<HashMap<String ,Integer>> theMap;
-	HashMap<String ,Integer> theTotalMap;
+	ArrayList<HashMap<String ,Double>> theMap;
+	HashMap<String ,Double> theTotalMap;
 	Pattern p = Pattern.compile("[\\w-]+");
 	Matcher m;
 	
 	WordMap(ArrayList<ArrayList<String>> all)
 	{
-		theMap = new ArrayList<HashMap<String ,Integer>>();
-		theTotalMap = new HashMap<String ,Integer>();
+		theMap = new ArrayList<HashMap<String ,Double>>();
+		theTotalMap = new HashMap<String ,Double>();
 		
 		for(ArrayList<String> temp : all)
 		{
@@ -25,13 +25,13 @@ public class WordMap
 		
 	}
 	
-	ArrayList<HashMap<String ,Integer>> retTheMap()
+	ArrayList<HashMap<String ,Double>> retTheMap()
 	{
 		return theMap;
 	}
 	
 	
-	HashMap<String ,Integer> retTheTotalMap()
+	HashMap<String ,Double> retTheTotalMap()
 	{
 		return theTotalMap;
 	}
@@ -49,10 +49,9 @@ public class WordMap
 		}
 	}
 	
-	HashMap<String , Integer> createMap(ArrayList<String> temp)
+	HashMap<String , Double> createMap(ArrayList<String> temp)
 	{
-		
-		HashMap<String , Integer> theFileMap = new HashMap<String , Integer>();
+		HashMap<String , Double> theFileMap = new HashMap<String , Double>();
 		String jlt;
 		
 		HashMap<String , Integer> stopWords = new StopwordsRemoval().getStopWordList();
@@ -73,7 +72,7 @@ public class WordMap
 					{
 						if(!stopWords.containsKey(jlt))
 						{
-							theTotalMap.put(jlt, 1);
+							theTotalMap.put(jlt, 1.0);
 						}
 					}
 					if(theFileMap.containsKey(jlt))
@@ -84,7 +83,7 @@ public class WordMap
 					{
 						if(!stopWords.containsKey(jlt))
 						{
-							theFileMap.put(jlt, 1);
+							theFileMap.put(jlt, 1.0);
 						}
 					}
 				
