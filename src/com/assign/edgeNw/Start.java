@@ -15,20 +15,24 @@ public class Start {
 		ReadFiles rf = new ReadFiles();
 		ArrayList<ArrayList<String>> allFiles = rf.getAllFileObject();
 		
-		// Just Check out For each File all the possible words
-		// Print them and Check it out
+		// Make the Hack Object
+		Hacks hack = new Hacks(allFiles);
 		
-		WordMap wm = new WordMap(allFiles);
+		// Term Frequency and printing the Sorted out List
+		HashMap<String ,Integer> theMap = hack.termFrequency();
+		hack.printSortedList(theMap);
 		
-		ArrayList<HashMap<String ,Integer>> theMap = wm.retTheMap();
 		
-		HashMap<String , Integer> temp = theMap.get(0);
 		
-		for(String s : temp.keySet())
+		/*
+		for(String s : theMap.keySet())
 		{
-			System.out.println(s + "  ==  " + temp.get(s) );
+			if(theMap.get(s) > 2)
+			{
+				System.out.print(s + "  ==  " + theMap.get(s) + "  ,, " );
+			}
 		}
+		*/
 		
 	}
-
 }
