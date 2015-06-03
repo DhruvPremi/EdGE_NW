@@ -23,6 +23,29 @@ public class Hacks
 		return wm.getUnigramList();
 	}
 	
+	ArrayList<HashMap<String , Double>> algoOneSkillsPerDocument(double threshold)
+	{
+		ArrayList<HashMap<String , Double>> toBe = new ArrayList<HashMap<String , Double>>();
+		HashMap<String , Double> temp;
+		HashMap<String ,Double> overallImpSkills = rateByDocumentFrequencyAndUnigram(threshold);
+		
+		for(HashMap<String ,Double> eachDoc : new WordMap(allFilesString).theMap)
+		{
+			temp = new HashMap<String , Double>();
+			for(String s : eachDoc.keySet())
+			{
+				if(overallImpSkills.containsKey(s))
+				{
+					temp.put(s, overallImpSkills.get(s) * eachDoc.get(s));
+				}
+			}
+			toBe.add(temp);
+		}
+		return toBe;
+	}
+		
+	
+	
 	HashMap<String ,Double> rateByDocumentFrequencyAndUnigram(double threshold)
 	{
 		Unigram wm = new Unigram();

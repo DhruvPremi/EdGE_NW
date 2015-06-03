@@ -58,9 +58,14 @@ public class Start {
 		// Rate Skills by Document Frequency 
 		hack.printSortedList(hack.rateByDocumentFrequencyAndUnigram(.3) , "\n\nRatings when Document Frequency and Unigram are used");
 		
-		
-		
-		
+		// For every Document Skills based on Document Frequency , Unigram  and term frequency
+		ArrayList<HashMap<String , Double>> algoOneSkillsPerDocument = hack.algoOneSkillsPerDocument(.3);
+		i = 1;
+		for(HashMap<String , Double> map : algoOneSkillsPerDocument)
+		{
+			hack.printSortedList(map, i + " Document's Top Skills in Sorted order ");
+			i++;
+		}
 		
 	}
 }
