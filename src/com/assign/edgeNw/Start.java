@@ -3,8 +3,8 @@ package com.assign.edgeNw;
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class Start {
-
+public class Start 
+{
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
@@ -66,6 +66,14 @@ public class Start {
 			hack.printSortedList(map, i + " Document's Top Skills in Sorted order ");
 			i++;
 		}
+		
+		// Make the Bigram and printing out the Maximum strength Bigrams , depending upon the threshold
+		HashMap<String, HashMap<String , Double>> bigram = new Bigram().reduceBigram(.3);
+		System.out.println("\n\n" + bigram.toString());
+		
+		
+		
+		
 		
 	}
 }
