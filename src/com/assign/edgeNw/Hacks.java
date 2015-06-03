@@ -10,11 +10,82 @@ public class Hacks
 {
 	ArrayList<ArrayList<String>> allFilesString;
 	ValueComparator bvc;
+	ValueComparatorLong lbvc;
 	 
 	Hacks(ArrayList<ArrayList<String>> allFilesString)
 	{
 		this.allFilesString = allFilesString;
 	}
+	
+	HashMap<String , Long> unigramList()
+	{
+		Unigram wm = new Unigram();
+		return wm.getUnigramList();
+	}
+	
+	HashMap<String ,Double> rateByDocumentFrequencyAndUnigram(double threshold)
+	{
+		Unigram wm = new Unigram();
+		HashMap<String , Long> unigram = wm.getUnigramList();
+		HashMap<String , Double> dFrequency = documentFrequency();
+		HashMap<String , Double> rating = new HashMap<String , Double>();
+		
+		int size = allFilesString.size();
+		double critical = size * threshold;
+		
+		double total = 1;
+		for(String s : dFrequency.keySet())
+		{
+			if(dFrequency.get(s) >= critical)
+			{
+				if(unigram.containsKey(s))
+				{
+					rating.put(s, (double)unigram.get(s));
+					total = total + (double)unigram.get(s);
+				}
+				else
+				{
+					rating.put(s, 1.0);
+					total = total + 1;
+				}
+			}
+		}
+		
+		for(String s: rating.keySet())
+		{
+			rating.put(s, Math.log(total/rating.get(s)));
+		}
+		
+		return rating;
+	}
+	
+	ArrayList<HashMap<String , Long>> eachTermInEachDocumentUnigramFrequeny()
+	{
+		Unigram ug = new Unigram();
+		HashMap<String , Long> temp = ug.getUnigramList();
+		
+		ArrayList<HashMap<String , Long>> toBe = new ArrayList<HashMap<String , Long>>();
+		
+		for(HashMap<String ,Double> eachDoc : new WordMap(allFilesString).theMap)
+		{
+			HashMap<String , Long> each = new HashMap<String , Long>();
+			for(String s: eachDoc.keySet())
+			{
+				if(temp.containsKey(s))
+				{
+					each.put(s, temp.get(s));
+				}
+				else
+				{
+					each.put(s, new Long(1));
+				}
+			}
+			toBe.add(each);
+		}
+		
+		return toBe;
+	}
+	
 	
 	HashMap<String ,Double> termFrequency()
 	{
@@ -59,10 +130,36 @@ public class Hacks
 		sorted_map.putAll(map);
 		System.out.println(message+ "  " + sorted_map);
 	}
+	
+	void printSortedListLong(HashMap<String , Long> map ,  String message)
+	{
+		lbvc = new ValueComparatorLong(map);
+		TreeMap<String,Long> sorted_map = new TreeMap<String,Long>(lbvc);
+		sorted_map.putAll(map);
+		System.out.println(message+ "  " + sorted_map);
+	}
 }
 
-class ValueComparator implements Comparator<String> {
 
+class ValueComparatorLong implements Comparator<String> {
+
+    Map<String, Long> base;
+    public ValueComparatorLong(Map<String, Long> base) {
+        this.base = base;
+    }
+
+    // Note: this comparator imposes orderings that are inconsistent with equals.    
+    public int compare(String a, String b) {
+        if (base.get(a) >= base.get(b)) {
+            return -1;
+        } else {
+            return 1;
+        } // returning 0 would merge keys
+    }
+}
+
+class ValueComparator implements Comparator<String> 
+{
     Map<String, Double> base;
     public ValueComparator(Map<String, Double> base) {
         this.base = base;

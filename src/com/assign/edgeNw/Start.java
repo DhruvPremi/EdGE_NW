@@ -31,12 +31,35 @@ public class Start {
 			i++;
 		}
 		
-		
 		// Document Frequency for each term
 		hack.printSortedList(hack.documentFrequency(), "Document Frequency for each term");
 		
-		
 		// Unigram Model
+		HashMap<String , Long> bawliee = hack.unigramList();
+		System.out.println(bawliee.get("experience"));
+		System.out.println(bawliee.get("java"));
+		/*
+			System.out.println(bawliee.get("apache"));
+			System.out.println(bawliee.get("javascript"));
+			System.out.println(bawliee.get("skills"));
+			System.out.println(bawliee.get("knowledge"));
+		*/
+		System.out.println(bawliee.get("hibernate"));
+		
+		// For Each Document and each term in it ,their UniGram Value
+		ArrayList<HashMap<String ,Long>> eachDocumentUnigramMap = hack.eachTermInEachDocumentUnigramFrequeny();
+		i = 1;
+		for(HashMap<String , Long> map : eachDocumentUnigramMap)
+		{
+			hack.printSortedListLong(map, i + " Document's Unigram Frequency ");
+			i++;
+		}
+		
+		// Rate Skills by Document Frequency 
+		hack.printSortedList(hack.rateByDocumentFrequencyAndUnigram(.3) , "\n\nRatings when Document Frequency and Unigram are used");
+		
+		
+		
 		
 		
 	}
