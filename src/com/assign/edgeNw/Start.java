@@ -38,12 +38,14 @@ public class Start
 		HashMap<String , Long> bawliee = hack.unigramList();
 		System.out.println(bawliee.get("experience"));
 		System.out.println(bawliee.get("java"));
+		
 		/*
 			System.out.println(bawliee.get("apache"));
 			System.out.println(bawliee.get("javascript"));
 			System.out.println(bawliee.get("skills"));
 			System.out.println(bawliee.get("knowledge"));
 		*/
+		
 		System.out.println(bawliee.get("hibernate"));
 		
 		// For Each Document and each term in it ,their UniGram Value
@@ -59,7 +61,7 @@ public class Start
 		hack.printSortedList(hack.rateByDocumentFrequencyAndUnigram(.3) , "\n\nRatings when Document Frequency and Unigram are used");
 		
 		// For every Document Skills based on Document Frequency , Unigram  and term frequency
-		ArrayList<HashMap<String , Double>> algoOneSkillsPerDocument = hack.algoOneSkillsPerDocument(.3);
+		ArrayList<HashMap<String , Double>> algoOneSkillsPerDocument = hack.algoOneSkillsPerDocument(.3 , false);
 		i = 1;
 		for(HashMap<String , Double> map : algoOneSkillsPerDocument)
 		{
@@ -67,13 +69,19 @@ public class Start
 			i++;
 		}
 		
+		// Including Rules , For every Document Skills based on Document Frequency , Unigram  and term frequency
+		System.out.println("Rules are taken into Account when scoring");
+		algoOneSkillsPerDocument = hack.algoOneSkillsPerDocument(.3 , true);
+		i = 1;
+		for(HashMap<String , Double> map : algoOneSkillsPerDocument)
+		{
+			hack.printSortedList(map, i + " Document's Top Skills in Sorted order (Rules are taken into account) ");
+			i++;
+		}
+		
 		// Make the Bigram and printing out the Maximum strength Bigrams , depending upon the threshold
 		HashMap<String, HashMap<String , Double>> bigram = new Bigram().reduceBigram(.3);
 		System.out.println("\n\n" + bigram.toString());
-		
-		
-		
-		
 		
 	}
 }

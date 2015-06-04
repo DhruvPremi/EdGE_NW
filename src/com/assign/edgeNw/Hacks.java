@@ -23,13 +23,23 @@ public class Hacks
 		return wm.getUnigramList();
 	}
 	
-	ArrayList<HashMap<String , Double>> algoOneSkillsPerDocument(double threshold)
+	ArrayList<HashMap<String , Double>> algoOneSkillsPerDocument(double threshold , boolean useRules)
 	{
 		ArrayList<HashMap<String , Double>> toBe = new ArrayList<HashMap<String , Double>>();
 		HashMap<String , Double> temp;
 		HashMap<String ,Double> overallImpSkills = rateByDocumentFrequencyAndUnigram(threshold);
 		
-		for(HashMap<String ,Double> eachDoc : new WordMap(allFilesString).theMap)
+		ArrayList<HashMap<String ,Double>> funda;
+		if(useRules)
+		{
+			funda = new Rules(allFilesString , false , true).theMap;
+		}
+		else
+		{
+			funda = new WordMap(allFilesString).theMap;
+		}
+		
+		for(HashMap<String ,Double> eachDoc : funda)
 		{
 			temp = new HashMap<String , Double>();
 			for(String s : eachDoc.keySet())
@@ -44,8 +54,7 @@ public class Hacks
 		return toBe;
 	}
 		
-	
-	
+
 	HashMap<String ,Double> rateByDocumentFrequencyAndUnigram(double threshold)
 	{
 		Unigram wm = new Unigram();
