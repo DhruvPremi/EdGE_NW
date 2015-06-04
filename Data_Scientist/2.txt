@@ -1,0 +1,8 @@
+Data scientist will be responsible to design and impelement efficient, adaptable, & reusable code and algorithms. The role requires tuning components for high performance & scalability using big data technologies like Pig, Hive, Hbase, Vertica, Redis etc and scripting languages Python, Java, scala, R etc.This will involve working with both product and tech team to help achieve a state-of-the-art environment that meets current and future business objectives.
+
+ 
+
+Technical Skills Required
+
+Primary: Fluency in atleast one of programming or scripting languages like Python, R Ruby, scala, Java for fast prototyping. SQL fundamentals and hand on with one of RDBMS Mysql, MSSQL, postgres SQL is a must.
+

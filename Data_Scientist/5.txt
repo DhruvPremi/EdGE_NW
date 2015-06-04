@@ -1,0 +1,22 @@
+Role of on Machine Learning - Data Scientist would involve analyze terabytes of data and billions of rows to discover correlations and patterns that empowers PubMatic Optimization Technology. We are looking for candidates who have deep data mining algorithms knowledge and are interested in applying this to huge datasets to build large scale data processing and analytics systems. It will be a very exciting and a hands-on role and you would get to enjoy working with a team of very smart engineers.
+
+ 
+
+Job Functions:
+
+    Own complete development and designing of the algorithms and frameworks involved in the same;
+    Natural Language Processing: the interactions between computers and humans;
+    Machine learning: Research and implement data mining and machine learning algorithms;
+    Conceptual modeling: To be able to share and articulate modeling;
+    Statistical analysis: To understand and work around possible limitations in models;
+    Predictive modeling: Use R, Mahout, Vowel Wabbit towards being able to predict future outcomes;
+    Hypothesis testing: Being able to develop hypothesis and test them with careful experiments;
+    Develop extensible, scalable, reliable software for high volume, real-time data processing;
+
+        B.Tech/M.Tech/PHD in computer science/ statistics/mathematics with in-depth knowledge in data mining / machine learning / artificial intelligence / operational research with 2+ years of hands-on experience in this fields.
+    Able to program, preferably in different programming languages such as Python, R, Java, Ruby, Pig or SQL.
+    Need to have an understanding of Hadoop, Hive and/or MapReduce
+    Being able to advice senior management in clear language about the implications of their work for the organisation
+    Being able to create examples, prototypes, demonstrations to help management better understand the work
+    Being able to work autonomously
+    Good communication skills and enthusiasm to learn new technologies.

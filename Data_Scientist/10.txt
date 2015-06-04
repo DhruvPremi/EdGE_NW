@@ -1,0 +1,37 @@
+Job Description:
+
+Job Title: Bigdata/ Hadoop Professional
+
+Experience: 3 Yrs to 10 Yrs
+
+Job Location: New Delhi
+
+Technical Skills Required:
+
+Candidate Profile:
+
+- Ability to thrive in a dynamic and fast-changing environment.
+
+- Should be results oriented, proactive and showing overall leadership quality.
+
+- Design and build extremely reliable, scalable and high performing enterprise systems in about one-third the time that most competent people think possible.
+
+- Write quality code in an object oriented language like Java.
+
+Qualifications:
+
+- Bachelor / Master"s / Doctoral degree in CS/ME/IT/related technology (IIT"s, REC"s, BITS, etc preferred)
+
+Required Skills:
+
+- 2.6+ years of professional programming experience
+
+- Java development experience on huge scale, high-volume sites or web applications.
+
+- Experience in Distributed Systems/Computing is Preferred.
+
+- Good knowledge of Core Java concepts.
+
+- Proficient in hadoop map/reduce, No SQL databases.
+
+- Should have have at least 2 years of experience working dedicated to Big data Technologies

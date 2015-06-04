@@ -1,0 +1,41 @@
+Responsibilities:
+
+Tapjoy is seeking a Data Scientist.  Essential duties and responsibilities may include, but are not limited to, the following as additional roles and/or focus will be needed as the company and department continues to grow and evolve:
+
+•  Build a comprehensive recommendation system from the ground up (recommending mobile apps, content, etc.)
+
+•  Build a data/stats-driven ad optimization system, working closely with the product team
+
+•  Constantly experiment and improve the relevancy of the recommendation/ad optimization system
+
+•  Invent and improve algorithms given a set of business cases and help implement them in production
+
+•  Work with the product/engineering team to implement, test and deploy the solution on Hadoop cluster
+
+Requirements:
+
+•  B.S., M.S. or Ph.D. in Computer Science or similar applied technical field
+
+•  Must be hands-on Machine-learning related industry projects
+
+•  Solid object-oriented programming skill (Java) and at least one scripting language such as Python/Ruby/Perl
+
+•  Ability to work in a fast paced, test-driven collaborative and iterative programming environment
+
+•  Understand major recommendation algorithms (Collaborative Filtering, Matrix factorization, Naive Bayes, Boosting method)
+
+•  Understand various ad optimization algorithms (CTR prediction, eCPM optimization, user targeting and segmentation, RTB and real-time optimization)
+
+•  Strong understanding of Algorithms, Data Structures and Machine Learning / Data Mining
+
+•  Understanding of RDBMS, SQL and NoSQL alternatives
+
+•  Experience with Hadoop/Hbase/Pig or MapReduce/Mahout/Bigtable is a plus
+
+•  Previous experience with performance-based ad systems is a plus
+
+•  Understanding of clustering and classification techniques (Naive Bayes, SVM, NN, Boosting Methods, etc.) is a plus
+
+•  Practical experience on natural language processing is preferred
+
+So…why would you want to work for Tapjoy? 

@@ -1,0 +1,35 @@
+Housing.com is looking for a Data Scientist to be a part of our growing and very-passionate-about-data Data Science Lab. As a data scientist, you will get to design and develop data-driven products and features. You will learn and employ the latest in data technologies to power these products. You will develop amazing consumer-facing applications as well as our in-house analytics platform.
+
+ 
+
+The ideal candidate will: 
+
+    Apply machine learning techniques on Housing’s unique real estate data to come with innovative products and features that will redefine real-estate on web
+    Extract and analyze our web usage data to help us decide what features click with the users.
+    Design experiments and success metrics to test out new product ideas
+    Do ground-breaking work in optimizing logistics of our huge operations team with data-driven optimization algorithms
+    Analyze user behavior and develop User Recommendation Systems; come up with new ideas and technologies to wow our users
+    Work with product managers and designers to build amazing consumer facing data driven products
+    Be responsible to drive our data and technology blogs
+    Design and build tools for our Analytics teams
+
+Requirements:
+
+    Strong background in Machine Learning, Statistics or Information Retrieval
+    Fluency with at least in scripting language such as Python
+    Familiarity with relational databases and SQL
+    Endless ideas about how to leverage Housing's unique data set
+    Critical thinking: ability to track down complex data and engineering issues, evaluate different algorithmic approaches, and analyze data to solve problems
+    Creativity: you can conceive of new data driven products, features, and technologies
+    Results: you prioritize, focusing on ideas and features that will have significant, measurable impact
+    Planning & estimation: ability to set and meet your own project objectives & milestones
+    Ability to coordinate effectively with team members in engineering, design, and product
+    Strong computer science fundamentals 
+
+ 
+
+Plus:
+
+    Experience with data analysis & visualization using libraries and tools like R, SciPy, Scikit-learn
+    Familiarity with web frameworks like Django a definite plus
+    Some experience working with large datasets and NoSQL solutions like Hadoop, MongoDB

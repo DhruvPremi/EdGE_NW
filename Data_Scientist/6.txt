@@ -1,0 +1,32 @@
+Greetings from YuMe India.
+
+Here is an exciting opportunity with YuMe, for all the Data Scientists.
+
+If you are looking to get into a product company that upholds your ideas and passion for technology, YuMe is the place to be.
+
+YuMe - A Decade of Innovation:  https://www.youtube.com/watch?v=U8k7KYBTo34
+
+
+Role : Data Scientist / Sr. Data Scientist
+
+Department : Data science
+
+Job Location: Chennai 
+
+Ability to design and develop complex algorithms, mathematical constructs and code.
+* Experience with behavioral targeting, online advertising/marketing, and/or user segmentation.
+* Proven track record in independently developing complex machine learning based systems, utilizing multiple machine learning frameworks and techniques for optimal accuracy and performance.
+* Strong understanding of Algorithms, Data Structures and Machine Learning Data Mining
+* Experience with math/statistics tools such as R or MATLAB
+* Solid understanding of yield management
+* Solid understanding of control theory and Markov decision processes
+* Solid understanding of numerical optimization (linear, integer, nonlinear, and dynamic programming)
+* Solid understanding of forecasting
+* Must have solid understanding of statistical modeling/machine learning/ data mining/ recommender systems concepts.
+* Demonstrated ability to deal with very large datasets.
+* Strong knowledge of data structure, modeling, replication and distributed data/object relational database mapping.
+* Strong analytical quantitative and problem solving ability
+* Experience with architecting, building and deploying reliable algorithms-based ad optimization systems that work at scale is a plus.
+* Experience with R, relational databases (MySQL preferred) and Unix/Linux experience are required.
+* A solid understanding of Hadoop, Hive and Map/Reduce programming is desirable.
+* Hands on experience working with Java or C++ is preferred

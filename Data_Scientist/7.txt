@@ -1,0 +1,36 @@
+Work on complicated Machine Learning, Image Recognition, Natural Language
+
+Processing and Data Analysis problems.
+
+● Work on Job recommendation and matching algorithms to perfectly match a candidate
+
+with a Job profile considering all possible parameters.
+
+● Work on Image Processing coupled with machine learning algorithms to create a digital
+
+proctoring solution that is able to identify truthfulness during an assessment.
+
+● Work on Natural Language Processing system to create a semantic search engine on
+
+the lines of Facebook Graph Search.
+
+Strong understanding of data structures and algorithms.
+
+● Strong analytical thinking and problem solving skills.
+
+● Working experience with projects on Machine Learning, Image Recognition, NLP and
+
+Data analysis.
+
+● Strong portfolio of projects - open source or otherwise.
+
+● Good working knowledge with different database systems - both relational and non-
+relational.
+
+● “Come what may, I’ll get-it-done” attitude. We will support you in all ways to achieve
+
+whatever you are working on.
+
+● Strong desire and dedication towards learning.
+
+● Fun to work with. We strongly believe in “All work, no play makes Jack a dull boy”

@@ -1,0 +1,5 @@
+    He/she who are passionate about machine learning or NLP or Data mining;those who can quickly adapt to a new domain, understand the data and use their data science skills to create impact. 
+    Passion toward applied mathematics / statistics. Experience with data mining techniques (e.g., clustering, classification, sequence mining, time series etc.).
+    Technical expertise in a language of your choice, ability to rapidly prototype. Experience in big data platforms (e.g., Hadoop, Spark) is a plus.
+    Good business and communication skills with an ability to validate and scientifically prove hypotheses for a given business problem.
+    Prior experience in building data for complex real time problems.

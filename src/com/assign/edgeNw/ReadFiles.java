@@ -11,7 +11,7 @@ public class ReadFiles
 	BufferedReader br = null;
 	String[] paths;
 	File file = null;
-	String dataDir = "./Data/";
+	String dataDir = "./Data_Java/";
 	ArrayList<ArrayList<String>> allFiles = new ArrayList<ArrayList<String>>();
 	
 	ReadFiles()
