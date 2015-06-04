@@ -1,0 +1,71 @@
+Intiution
+
+1. As you have 10 documents (JD) of any Jobe Profile Type ex Java , you don't have a lot of marked data to train and test which is crucial for supervised Machine Learning Algo. You have just one association among all of them , that they are of the same type.
+Keeping this in Mind. I focussed on,
+
+2. What are the features occuring in all of them ?
+
+3. In those common features among all the documents which ones should be given a higher weigtage ?
+
+4. What can you after step 3 about the individial features of each document.
+
+5. Can we apply some Manual Rule to enrich our feature set ?
+
+6. What does Bigram probabilities say about these kind of Data ?
+
+What I did  and How the code works ?
+
+1. You read all the files stored in the "Data" folder.
+ReadFiles rf = new ReadFiles();
+ArrayList<ArrayList<String>> allFiles = rf.getAllFileObject();
+
+2. Make a Hacks Class Object which is going to do all the Job ,
+Hacks hack = new Hacks(allFiles);
+
+3. Just to Visualize the Documents better , can calculate for each document it's own term frequency
+hack.eachDocumentTermFrequncy();
+
+4. Now the CRITICAL portion , Find the Document Frequency of each term ex if out of 10 documents it occures in five then the
+document frequency is 5.
+hack.documentFrequency();
+In our Dataset it Gave of Java it gave
+{java=10.0, skills=10.0, experience=9.0, software=8.0, design=8.0, knowledge=8.0, core=7.0, development=7.0, applications=7.0, technologies=7.0, team=7.0, years=7.0, systems=7.0, j2ee=6.0, hibernate=6.0, working=6.0, ability=6.0, server=6.0, jsp=6.0, xml=6.0, performance=5.0, database=5.0, web=5.0, develop=5.0, degree=5.0, javascript=5.0, ajax=5.0, css=5.0, sql=5.0, jquery=5.0, ....... 
+
+5. Downloaded a unigram List from Norvig site based on google Data,
+http://norvig.com/ngrams/
+hack.unigramList();
+
+6. Rate the Skills (features) by two things Document frequency and their Unigram Value , if their unigram value is Higher it means they are frequent and should be given low weigth
+Document Frequency * log(total_Sum/ unigram frequency of that term)
+hack.rateByDocumentFrequencyAndUnigram(.3)
+{jquery=23.224969564223994, j2ee=23.224969564223994, jms=9.473351336223786, jsf=9.471984621319395, hibernate=9.45059771759612, weblogic=8.82009026017495, struts=8.63003596913899, tomcat=8.58968886644333, relational=8.291823478907165, frameworks=8.278656429292242, jsp=8.235365474520465, ajax=8.028092265946151, websphere=7.926021146891216, verbal=7.749419048295522, delivering=7.324720269523916, designing=7.160911918296082, demonstrated=6.948074342013379, soap=6.884900806654705,}
+
+
+7. To find the Top skills for each JD , we use the above calculated score and the skill frequncy in that document,
+hack.algoOneSkillsPerDocument(.3 , false);
+You can the print output when you run the Code.
+
+8. Suppose you decide to manually add rules to give some patterns more weight like i have choossen
+If the sentence has a keyword "skill" in it then may be all the words in that sentence should be given more weightage
+If the sentence has a lot of comma's , normally it is used to add write multiple skills ex java, jsp , struts , weblogic
+you can use the Rules if you like by 
+hack.algoOneSkillsPerDocument(.3 , true);
+Can also choose eother of the rules by 
+Rules(allFilesString , false , true)
+
+9. Bigram prpbablities gave us a very unexpected but powerfull result when applied
+new Bigram().reduceBigram(.3);
+{core={java=7.0}, java={spring=5.0}, application={development=5.0}, web={services=5.0}, working={knowledge=5.0}, relational={database=4.0}, communication={skills=5.0}, experience={working=4.0}, years={experience=4.0}, object={oriented=7.0}, sql={server=5.0}}
+
+
+Things i would have done if i had a good amount of time and data (Marked) 
+
+1. Use wikipedia to cluster the skills better ex if many terms are similiar , they should have been given more weightage collectively
+
+2. Use wordnet to remove the Verbs or give less weights
+
+3. If i had a large collection of JD's of different areas , would have calculated Inverse document frequncy of words so that words like experience and communication will automatically get low preference.
+
+4. If i had labeled data , would have given features like that after "skills" word if you have a lot of commas you can have real skills there and yes a dcitionary of known skills would have also worked fine and help in finding new skills. Would have trained a CRF over it.
+
+   

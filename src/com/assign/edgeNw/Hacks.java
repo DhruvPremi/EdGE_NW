@@ -114,11 +114,9 @@ public class Hacks
 			}
 			toBe.add(each);
 		}
-		
 		return toBe;
 	}
-	
-	
+
 	HashMap<String ,Double> termFrequency()
 	{
 		WordMap wm = new WordMap(allFilesString);
